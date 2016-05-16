@@ -1,0 +1,33 @@
+{block keywords}reklamní agentura, fotoslužby, tisk fotografií, tisk fotoobrazů, příbram{/block}
+{block optional}
+<script type="text/javascript" src="fotoprint.js"></script>
+<script type="text/javascript" src="gallery.js"></script>
+{/block}
+{block topBanner}
+<div id="topBanner">
+	<img id="topbnr1" src="img/tisk-fotografii.png" alt="tisk fotografií" style="position: absolute; left: 10px; top: 2px;">
+	<img id="topbnr2" src="img/tisk-fotoobrazu.png" alt="tisk fotoobrazů" style="position: absolute; left: 154px; top: 90px;">
+	<img id="topbnr3" src="img/fotografie-na-pockani.png" alt="fotografie na počkání" style="position: absolute; left: 10px; top: 90px;">
+</div>
+{/block}
+
+<div n:block="content" id="content">
+	<h2 n:block="title">Fotoslužby</h2>
+	<div class="block four">
+		<p>
+			<img class="icon" alt="{include #title|striptags|trim}" src="icon/foto-tisk.png">
+			Profesionální digitální technikou spolehlivě nafotíme reklamní a prezentační materiály, produkty a nejrůznější společenské akce.
+			Zajistíme tisk vašich fotografií, včetně tisku na plátno.
+			Fotoobrazy dodáváme v nejrůznějších proporcích a velikostech, vždy v závislosti na individuálních požadavcích našich zákazníků.
+		</p>
+	</div>
+	<a target="_blank" href="http://www.lovelyart.cz">
+		<img alt="Lovely Art" src="img/lovelyart.jpg">
+	</a>
+	<img id="foto11" src="img/foto1.png" alt="" width="110" aheight="133" style="display:none;position: absolute; left: 250px; top: 100px;">
+	<img id="foto22" src="img/foto2.png" alt="" width="120" aheight="133" style="display:none;position: absolute; left: 180px; top: 40px;">
+	<img id="foto33" src="img/foto3.png" alt="" width="110" aheight="133" style="display:none;position: absolute; left: 180px; top: 120px;">
+	<img id="foto4" src="img/obr4.png" alt="" width="0" height="133" style="position: absolute; left: 1000px; top: 90px;">
+	<img id="foto5" src="img/obr5.png" alt="" width="0" height="128" style="position: absolute; left: 1000px; top: 90px;">
+	{include #gallery}
+</div>

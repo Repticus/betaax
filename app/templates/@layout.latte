@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="BETA AX je reklamní agenturou, která se ve svém okolí Příbram snaží být tou nejlepší a razit nový směr.">
+		<meta name="keywords" content="{block keywords|strip|striptags}reklama, agentura, příbram, fóliová, světelná, 3D, potisk{/block}">
+		<meta name="robots" content="{$robots}" n:ifset="$robots">
+		<title>{block title|strip|striptags}Reklamní agentura BETA AX{/block}</title>
+		<link rel="shortcut icon" href="/favicon.ico">
+		{block default}
+		<link rel="stylesheet" href="/betaax.css" type="text/css">
+		<script type="text/javascript" src="/jquery.js"></script>
+		<script type="text/javascript" src="/menu.js"></script>
+		<script type="text/javascript" src="/btmbnr.js"></script>
+		{/block}
+		{block optional}
+		{/block}
+	</head>
+	<body>
+		<div id="page">
+			<div id="head">
+				<img id="logo" alt="Reklamní agentura BETA AX" src="/img/beta-ax.png">
+				<ul id="menu">
+					{foreach $menu as $item}
+						{block |strip|replace:"> <":"><"|indent:5}
+						<li>
+							{var $link=$item['link']}
+							<a {ifCurrent $item['link']} class="active"{/ifCurrent} n:href="Betaax:$link">
+								<img class="icon" alt="{$item['title']}" src="/icon/{$item['icon']}.png">
+							</a>
+						</li>
+						{/block}
+					{/foreach}
+				</ul>
+				<div n:block="topBanner" id="topBanner">
+					<img id="topbnr1" src="/img/vyroba-reklam.png" alt="Výroba reklam" style="position: absolute; left: 54px; top: 2px;">
+					<img id="topbnr2" src="/img/reklamni-servis.png" alt="Kompletní reklamní servis" style="position: absolute; left: 110px; top: 90px;">
+					<img id="topbnr3" src="/img/web-design-polepy-vozu.png" alt="Web design, polepy vozu" style="position: absolute; left: 11px; top: 90px;">
+					<img id="topbnr4" src="/img/tisk-fotoobrazu.png" alt="Fotoobrazy na míru" style="position: absolute; left: 181px; top: 90px;">
+				</div>
+			</div>
+			{include #content|indent:3}
+			<div id="foot">
+				<div id="bottomBanner">
+					<img src="/img/reklama-ve-meste.png" alt="reklamna ve měste" >
+					<img src="/img/pronajem-reklamnich-ploch.png" alt="pronájem reklamních ploch" style="display: none">
+				</div>
+
+				<a id="contact" n:href="Betaax:kontaktyDotazy">
+					<ul>
+						<li><strong>Reklamní agentura BETA AX</strong></li>
+						<li>Tel.: +420 318 635 681</li>
+						<li>Mobil: <strong>+420 602 103 803</strong></li>
+						<li>Email: <strong>betaax@betaax.cz</strong></li>
+						<li>Březohorská 253, 261 01 Příbram 7</li>
+					</ul>
+				</a>
+			</div>
+			<img id="foto1" src="/img/obr1.png" alt="" style="position: absolute; left: 360px; top: -140px;">
+			<img id="foto2" src="/img/obr2.png" alt="" style="position: absolute; left: 434px; top: -160px;">
+			<img id="foto3" src="/img/obr3.png" alt="" style="position: absolute; left: 507px; top: -140px;">
+		</div>
+	</body>
+</html>
+
+{define gallery}
+<div class="gallery">
+	<h2>Fotogalerie</h2>
+	{foreach $gallery as $image}
+		<a href="{$image['fl']}" rel="g[i]">
+			<img src="{$image['sm']}" alt="" />
+		</a>
+	{/foreach}
+</div>
+{/define}

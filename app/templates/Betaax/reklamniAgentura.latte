@@ -1,0 +1,127 @@
+{block optional}
+<script type="text/javascript" src="topbnr.js"></script>
+{/block}
+
+<div n:block="content" id="content">
+	<h2 n:block="title">Reklamní agentura BETA AX</h2>
+	<div class="block two">
+		<p>
+			<img class="icon" alt="{include #title|striptags|trim}" src="icon/reklamni-agentura.png">
+			Cílem naší reklamní agentury je zajistit zákazníkům v příbramském regionu (a nejen v něm),
+			100% KVALITNÍ SERVIS v reklamní oblasti a maximálně vstřícný přístup,
+			který je nezbytnou součástí harmonicky fungujícího obchodu.
+		</p>
+		<p>
+			Jsme si plně vědomi toho, že hlavním zájmem našich klientů je především SE ZVIDITELNIT a dostat se tak za pomoci reklamy do povědomí veřejnosti.
+			Proto náš servis zahrnuje nejen výrobu reklamy, ale i poradenství v této oblasti,
+			včetně PRONÁJMU REKLAMNÍCH PLOCH za velmi příznivé ceny.
+			Vždy velice oceníme, pokud se k nám zákazníci vracejí – tím spíše s pozitivními referencemi a ohlasy na naši práci,
+			což nás samozřejmě velmi motivuje.
+		</p>
+	</div>
+	<div class="block two">
+		<p>
+			Reklama má být efektivní a jejím úkolem je pomoci klientům vytvořit přitažlivou image jejich firmy či podniku.
+			Právě tohoto výsledku se snažíme vždy dosáhnout.
+			Ostatně – Vaše dobře fungující a atraktivní reklama je naší vizitkou.
+			Těší nás pečovat o stávající zákazníky a vždy rádi přivítáme nové!
+		</p>
+	</div>
+	{var $count = 0}
+	{foreach $menu as $item}
+		{var $link = $item['link']}
+		{ifset #$link}
+			<a n:class="block, four" n:href="$item['link']">
+				<h2>{$item['title']}</h2>
+				<p>
+					<img class="icon" alt="{$item['title']}" src="icon/{$item['icon']}.png">
+					{include #$link|indent:5}
+				</p>
+			</a>
+		{/ifset}
+	{/foreach}
+	<h2>Naši partneři</h2>
+	<div id="partner">
+		<a target="_blank" href="http://www.alpinepro.cz"><img alt="" src="lgo/alpine-pro.png" /></a>
+		<a target="_blank" href="http://www.kuchyne-oresi.cz"><img alt="" src="lgo/oresi.png" /></a>
+		<a target="_blank" href="http://www.hutchinson.cz"><img alt="" src="lgo/hutchinson.png" /></a>
+		<a target="_blank" href="http://www.mo-nex.cz"><img alt="" src="lgo/monex.png" /></a>
+		<a target="_blank" href="http://www.lyze-pribram.cz"><img alt="" src="lgo/skicentrum.png" /></a>
+		<a target="_blank" href="http://www.profigroup.cz"><img alt="" src="lgo/profigroup.png" /></a>
+		<a target="_blank" href="http://www.jkr.cz"><img alt="" src="lgo/jkr.png" /></a>
+		<a target="_blank" href="http://www.dohnalrally.cz"><img alt="" src="lgo/dohnal-rally.png" /></a>
+		<a target="_blank" href="http://www.scrapex.cz"><img alt="" src="lgo/scrapex.png" /></a>
+		<a target="_blank" href="http://www.bagrax.cz"><img alt="" src="lgo/bagr-ax.png" /></a>
+		<a target="_blank" href="http://skycentrum.cz"><img alt="" src="lgo/skycentrum.png" /></a>
+		<a target="_blank" href="http://www.galerie-drtikol.com"><img alt="" src="lgo/galerie.png" /></a>
+		<a target="_blank" href="http://www.realservis.cz"><img alt="" src="lgo/real-servis.png" /></a>
+		<a target="_blank" href="http://www.hotelujezera.cz"><img alt="" src="lgo/hotel-u-jezera.png" /></a>
+		<a target="_blank" href="http://www.strelnicelero.cz"><img alt="" src="lgo/strelnice-lero.png" /></a>
+		<a target="_blank" href="http://www.dorys.cz"><img alt="" src="lgo/dorys.png" /></a>
+		<a target="_blank" href="http://inus.cz"><img alt="" src="lgo/inus.png" /></a>
+		<a target="_blank" href="http://www.uvazky.cz"><img alt="" src="lgo/vazka.png" /></a>
+		<a target="_blank" href="http://www.restauracemajak.cz"><img alt="" src="lgo/restaurace-majak.png" /></a>
+		<a target="_blank" href="http://www.pbecko.cz"><img alt="" src="lgo/becko.png" /></a>
+		<a target="_blank" href="http://www.centrumobora.cz"><img alt="" src="lgo/zahradnictvi-obora.png" /></a>
+		<a target="_blank" href="http://www.rybarnauobory.cz"><img alt="" src="lgo/rybarna-obora.png" /></a>
+		<a target="_blank" href="http://www.penzionlucie.cz"><img alt="" src="lgo/pension-lucie.png" /></a>
+		<a target="_blank" href="http://www.hotelorlik.cz"><img alt="" src="lgo/hotel-orlik.png" /></a>
+		<a target="_blank" href="http://www.autcom.cz"><img alt="" src="lgo/autcom.png" /></a>
+		<a target="_blank" href="http://www.tenart.cz"><img alt="" src="lgo/tenart.png" /></a>
+		<a target="_blank" href="http://www.dumrealit.cz"><img alt="" src="lgo/dum-realit.png" /></a>
+		<a target="_blank" href="http://www.pilecky.cz"><img alt="" src="lgo/pilecky.png" /></a>
+		<a target="_blank" href="http://www.pesice.cz"><img alt="" src="lgo/pesice.png" /></a>
+		<a target="_blank" href="http://www.activevision.cz"><img alt="" src="lgo/activevision.png" /></a>
+		<a target="_blank" href="http://www.agrics.cz"><img alt="" src="lgo/agrics.png" /></a>
+		<a target="_blank" href="http://www.kosmetika-aloha.cz"><img alt="" src="lgo/kosmetika-aloha.png" /></a>
+		<a target="_blank" href="http://www.solariumel.cz"><img alt="" src="lgo/studio-el.png" /></a>
+		<a target="_blank" href="http://www.evraznikom.cz"><img alt="" src="lgo/evraz.png" /></a>
+		<a target="_blank" href="http://www.katerina-synkovass.webnode.cz"><img alt="" src="lgo/hl-salon.png" /></a>
+		<a target="_blank" href="http://www.muzeum-pribram.cz"><img alt="" src="lgo/hornicke-muzeum.png" /></a>
+		<a target="_blank" href="http://www.okna-intos.cz"><img alt="" src="lgo/okna-intos.png" /></a>
+		<a target="_blank" href="http://www.kaufland.cz"><img alt="" src="lgo/kaufland.png" /></a>
+		<a target="_blank" href="http://www.kovo-sds.cz"><img alt="" src="lgo/kovo-sds.png" /></a>
+		<a target="_blank" href="http://www.kalnex.cz"><img alt="" src="lgo/kalnex.png" /></a>
+		<a target="_blank" href="http://www.raycom.cz"><img alt="" src="lgo/raycom.png" /></a>
+		<a target="_blank" href="http://www.ts-pb.cz"><img alt="" src="lgo/technicke-sluzby.png" /></a>
+		<a target="_blank" href="http://www.caterpillar.cz"><img alt="" src="lgo/cat.png" /></a>
+		<a target="_blank"><img alt="" src="lgo/kadernictvi-neon.png" /></a>
+	</div>
+</div>
+
+{define #foliovaReklama}
+S použitím kvalitních fólií široké barevné škály vytváříme atraktivní polepy pro veškeré dopravní prostředky  - včetně skel.
+Polepit různé materiály pro nás není problém.
+{/define}
+
+{define #svetelnaReklama}
+Veškerou světelnou reklamu nabízíme včetně montáže, záručního i pozáručního servisu.
+Naším posláním je vždy vytvořit přijatelné a vhodně vypadající řešení světelné reklamy.
+{/define}
+
+{define #prostorovaReklama}
+Řezáním tvrzených polystyrenových pěn odporovým drátem do libovolného tvaru vzniká dnes velmi populární 3D REKLAMA.
+{/define}
+
+{define #velkoplosnyTisk}
+Díky moderní technologii můžeme vytvářet potisk nejrůznějších materiálů pro interiérové i exteriérové využití.
+{/define}
+
+{define #potiskPredmetu}
+K potisku lze použít: veškeré vektorové motivy (například firemní loga, ornamenty a vektorové šablony) nebo Vaše dodané FOTOGRAFIE, popřípadě kombinace obou variant.
+{/define}
+
+{define #fotoTisk}
+Profesionální digitální technikou spolehlivě nafotíme: REKLAMNÍ MATERIÁLY, PRODUKTY a prezentační materiály.
+{/define}
+
+{define #grafickeStudio}
+Dle zadání zákazníka vytvoříme originální grafiku na míru Vaší představě.
+Pracujeme s fotografiemi i vektorovou grafikou.
+{/define}
+
+{define #kontaktyDotazy}
+Nebojte se nás zeptat na jakýkoliv Váš dotaz či přání!
+Za každý dotaz jsme rádi.
+Na Vaše dotazy odpovídáme v co nejkratším čase.
+{/define}

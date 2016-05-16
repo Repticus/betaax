@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Kontaktní formulář - {$formData->subject}</title>
+	</head>
+	<body>
+		<div>
+			Jméno: {$formData->name}
+		</div>
+		<div>
+			Email: {$formData->email}
+		</div>
+		<div>
+			Předmět: {$formData->subject}
+		</div>
+		<div>
+			Zpráva:
+		</div>
+		<div>
+			{$formData->message}
+		</div>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+common:
+	parameters:
+		galleryDir: glr #adresar s umistenim obrazku pro galerii
+		imageFull: fl #adresar s obrazky v plnem rozliseni
+		imageSmall: sm #adresar s nahledy obrazku
+
+		menuList:
+			-
+				title: 'Reklamní agentura BETA AX'
+				link: 'reklamniAgentura'
+				icon: 'reklamni-agentura'
+			-
+				title: 'Fóliová reklama'
+				link: 'foliovaReklama'
+				icon: 'foliova-reklama'
+			-
+				title: 'Světelná reklama'
+				link: 'svetelnaReklama'
+				icon: 'svetelna-reklama'
+			-
+				title: '3D reklama'
+				link: 'prostorovaReklama'
+				icon: 'prostorova-reklama'
+			-
+				title: 'Velkoplošný tisk'
+				link: 'velkoplosnyTisk'
+				icon: 'velkoplosny-tisk'
+			-
+				title: 'Potisk předmětů'
+				link: 'potiskPredmetu'
+				icon: 'potisk-predmetu'
+			-
+				title: 'Fotoslužby'
+				link: 'fotoTisk'
+				icon: 'foto-tisk'
+			-
+				title: 'Grafické studio'
+				link: 'grafickeStudio'
+				icon: 'graficke-studio'
+			-
+				title: 'Kontakty a dotazy'
+				link: 'kontaktyDotazy'
+				icon: 'kontakty-dotazy'
+
+	php:
+		date.timezone: Europe/Prague
+		# zlib.output_compression: yes
+
+	nette:
+		application:
+			errorPresenter: Error
+
+		session:
+			expiration: 14 days
+
+	services:
+		routerFactory: RouterFactory
+		router: @routerFactory::createRouter
+
+	factories:
+
+production < common:
+
+development < common:

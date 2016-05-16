@@ -1,0 +1,49 @@
+{block keywords}reklamní agentura, kontakty, dotazy, příbram{/block}
+{block title}Kontakty a dotazy{/block}
+{block optional}
+<script type="text/javascript" src="topbnr.js"></script>
+<script type="text/javascript" src="placeholder.js"></script>
+{/block}
+<div n:block="content" id="content">
+	<div class="block two">
+		<h2>Neváhejte nás kontaktovat</h2>
+		<p>
+			<img class="icon" alt="{include #title|striptags|trim}" src="icon/kontakty-dotazy.png">
+			V případě jakéhokoliv dotazu se nebojte nám napsat.
+			Rádi vyhovíme Vašim požadavkům, nápadům či poptávkám a pokusíme se Vám v co nejkratším čase odpovědět.
+		</p>
+		<div class="lfloat">
+			<h2>Adresa firmy</h2>
+			<ul class="nolist">
+				<li><strong>Reklamní agentura BETA AX</strong></li>
+				<li>Březohorská 253</li>
+				<li>261 01 Příbram 7</li>
+			</ul>
+		</div>
+		<div class="lfloat">
+			<h2>Kontakty</h2>
+			<ul class="nolist">
+				<li>Tel.: +420 318 635 681</li>
+				<li>Mobil: +420 602 103 803</li>
+				<li>Email: <a href="mailto:betaax@betaax.cz">betaax@betaax.cz</a></li>
+			</ul>
+		</div>
+		<div class="clr"></div>
+		<br>
+		<h2>Kontaktní formulář</h2>
+		{form sendQuestion}
+			{input name}
+			{input email}
+			{input subject}
+			{input message}
+			{input send}
+			{input spamtest}
+		{/form}
+		<div n:foreach="$flashes as $flash" class="flash {$flash->type}">{$flash->message}</div>
+	</div>
+	<div class="block two">
+		<iframe width="470" height="470" frameborder="0" marginheight="0" marginwidth="0"
+				  src="https://maps.google.cz/maps?f=q&amp;source=s_q&amp;hl=cs&amp;q=Reklamn%C3%AD+agentura+BETA+AX&amp;sll=49.803763,15.474913&amp;sspn=6.091726,14.27124&amp;ie=UTF8&amp;ll=49.687678,14.000359&amp;spn=0.026098,0.040255&amp;z=14&amp;output=embed">
+		</iframe>
+	</div>
+</div>
