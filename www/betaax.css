@@ -228,6 +228,7 @@ a.active .icon, a:hover .icon {
   height: 140px;
   background-image: url("img/btmpnl.png");
   border-top: 1px solid #527B2F;
+  border-bottom: 1px solid #527B2F;
 }
 
 #bnrBtm {
@@ -262,6 +263,17 @@ a.active .icon, a:hover .icon {
 #frm-sendQuestion textarea {
   width: 452px;
   height: 150px;
+}
+
+.advert {
+  position: absolute;
+  left: 1010px;
+  top: 346px;
+  width: 150px;
+  color: #000000;
+  background-color: #FFF47C;
+  padding: 10px;
+  border: 1px solid #527B2F;
 }
 
 .clr {
