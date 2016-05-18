@@ -60,11 +60,24 @@ a {
 }
 
 #head {
-  height: 345px;
+  height: 346px;
   margin-bottom: 20px;
-  background-image: url("img/head.jpg");
-  background-repeat: no-repeat;
   border-bottom: 1px solid #527B2F;
+}
+
+#hdr1, #hdr2 {
+  position: absolute;
+  height: 346px;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+
+#hdr1 {
+  background-image: url("img/head1.png");
+}
+
+#hdr2 {
+  background-image: url("img/head2.png");
 }
 
 #page, #menu {
@@ -72,12 +85,12 @@ a {
   background-color: #FFFFFF;
 }
 
-#logo {
-  top: 40px;
-  left: 360px;
+#logo1, #logo2 {
+  top: 30px;
+  left: 434px;
 }
 
-#logo, #contact {
+#logo1, #logo2 {
   position: absolute;
 }
 
@@ -92,7 +105,7 @@ a {
 
 #menu {
   list-style: none;
-  margin: 10px;
+  margin: 30px;
   padding: 10px 0 0 10px;
   float: right;
 }
@@ -116,7 +129,7 @@ body, a {
   color: #747474;
 }
 
-h1, h2, #contact {
+h1, h2 {
   color: #333333;
 }
 
@@ -182,50 +195,59 @@ a.active .icon, a:hover .icon {
   margin-left: 0;
 }
 
-#foot {
-  height: 146px;
-  background-image: url("img/btmpanel.jpg");
-  border-top: 1px solid #527B2F;
-  border-bottom: 1px solid #527B2F;
+#bannerLine, #bannerTop {
+  top: 255px;
+  height: 60px;
+  width: 1000px;
+  line-height: 60px;
 }
 
-#topBanner {
-  text-align: center;
+#bannerLine {
   position: absolute;
-  top: 230px;
-  left: 160px;
-  height: 92px;
-  width: 830px;
+  background-color: gray;
+  opacity: 0.5;
+}
+
+#bannerTop {
+  position: absolute;
+  text-align: center;
   overflow: hidden;
 }
 
-#topBanner img {
-  position: relative;
-  top: 2px;
-}
-
-#bottomBanner {
-  position: relative;
-  width: 758px;
-  height: 146px;
-  float: left;
-  overflow: hidden;
-}
-
-#bottomBanner img {
-  position: absolute;
-  margin-top: 50px;
-  left: 140px;
-}
-
-#contact {
-  margin: 30px 0 0 20px;
-  text-align: center;
-}
-
-#contact ul {
-  list-style: none;
+#bannerTop h2 {
+  color: #FFFFFF;
+  font-size: 1.8em;
   margin: 0;
+  position: absolute;
+  top: 60px;
+  height: 60px;
+  width: 1000px;
+}
+
+#foot {
+  height: 140px;
+  background-image: url("img/btmpnl.png");
+  border-top: 1px solid #527B2F;
+}
+
+#bnrBtm {
+  height: 140px;
+  width: 760px;
+  line-height: 140px;
+  position: absolute;
+  left: 240px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#bnrBtm h2 {
+  color: #FFFFFF;
+  font-size: 1.8em;
+  margin: 0;
+  position: absolute;
+  top: 100px;
+  height: 140px;
+  width: 760px;
 }
 
 #frm-sendQuestion input,
